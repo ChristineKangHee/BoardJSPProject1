@@ -11,6 +11,10 @@ public class BoardVO {
 	private Date regdate;
 
 	private String photo;
+
+
+
+	private Date moddate;
 	private int cnt;
 	
 	public int getSeq() {
@@ -62,5 +66,12 @@ public class BoardVO {
 
 	public void setPhoto(String photo) {
 		this.photo = photo;
+	}
+	public Date getModdate() {
+		return moddate;
+	}
+
+	public void setModdate(Date moddate) {
+		this.moddate = moddate;
 	}
 }
