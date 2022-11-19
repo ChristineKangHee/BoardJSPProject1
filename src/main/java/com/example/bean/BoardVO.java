@@ -9,6 +9,8 @@ public class BoardVO {
 	private String writer;
 	private String content;
 	private Date regdate;
+
+	private String photo;
 	private int cnt;
 	
 	public int getSeq() {
@@ -53,5 +55,12 @@ public class BoardVO {
 	}
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
+	}
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
 	}
 }

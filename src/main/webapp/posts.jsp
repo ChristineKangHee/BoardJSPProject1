@@ -7,6 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>free board</title>
+	<link rel="stylesheet" href="member.css">
 <style>
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -49,6 +50,7 @@
 	<th>Title</th>
 	<th>Writer</th>
 	<th>Content</th>
+	<th>photo</th>
 	<th>Regdate</th>
 	<th>Edit</th>
 	<th>Delete</th>
@@ -60,6 +62,7 @@
 		<td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
+		<td>${u.getPhoto()}</td>
 		<td>${u.getRegdate()}</td>
 		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
